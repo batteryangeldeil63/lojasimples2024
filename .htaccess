@@ -1,0 +1,34 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+
+	# ^ significa o inicio da regra
+	# $ significa o fim da regra
+	# ? O caratecte anterior se torna opcional
+
+	# Ex.: http://humbertoandriolli.com.br/empresa/
+	RewriteRule ^empresa/?$ /empresa.php [L]
+
+	# Ex.: http://humbertoandriolli.com.br/produtos/sapato-social-preto-humberto-andriolli-13.html
+	RewriteRule ^produtos\/([a-z0-9-]+)-([0-9]+).html$ /produto.php?url=$1&id=$2 [L]
+
+	# Ex.: http://humbertoandriolli.com.br/categoria/12/camisas-social/
+	RewriteRule ^categoria\/([0-9]+)/([a-z0-9-]+)/?$ /produtos.php?url=$2&id=$1 [L]
+
+	# Ex.: http://humbertoandriolli.com.br/categoria/12/camisas-social/p2/
+	RewriteRule ^categoria\/([0-9]+)/([a-z0-9-]+)/p([0-9]+)/?$ /produtos.php?url=$2&id=$1&p=$3 [L]
+
+	# Ex.: http://humbertoandriolli.com.br/noticias/
+	RewriteRule ^noticias/?$ /noticias.php [L]
+
+	# Ex.: http://humbertoandriolli.com.br/noticias/p2/
+	RewriteRule ^noticias\/p([0-9]+)/?$ /noticias.php?p=$3 [L]
+
+	# Ex.: http://humbertoandriolli.com.br/noticias/nova-colecao-de-inverno-13.html
+	RewriteRule ^noticias\/([a-z0-9-]+)-([0-9]+).html$ /noticia.php?url=$1&id=$2 [L]
+
+	# Página de Contato
+	# Ex.: http://humbertoandriolli.com.br/contato/
+	RewriteRule ^contato/?$ /contato.php [L]
+
+</IfModule>

@@ -1,0 +1,86 @@
+#produto {
+
+	padding-top: 30px;
+
+}
+
+#produto .capa {
+
+	padding-bottom: 100%;
+
+	background: #EEE no-repeat center;
+	background-size: cover;
+
+}
+
+@media(max-width: 992px){
+	
+	#produto .capa {
+
+		margin-bottom: 15px;
+
+	}
+
+}
+
+#produto .info .codigo {
+	
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #888;
+
+    margin-bottom: 15px;
+	
+}
+
+#produto .info .titulo {
+	
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #d32020;
+
+	margin-bottom: 15px;
+
+}
+
+#produto .info .categoria {
+
+	margin-bottom: 15px;
+
+}
+
+#produto .info .categoria span {
+
+	padding: 5px 10px;
+	
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+
+    background: #2196f3;
+
+    border-radius: 3px;
+
+    display: inline-block;
+	
+}
+
+#produto .info .preco {
+	
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #888;
+}
+
+#produto .info .texto {
+	
+	font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+	
+}

@@ -1,0 +1,551 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  background: #F5F5F5;
+}
+.material-icons {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+#login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#login .box {
+  padding: 40px;
+  border-radius: 3px;
+  background: #009688;
+  text-align: center;
+}
+#login .box .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+#login .box .logo .icone {
+  width: 64px;
+  height: 64px;
+  margin-top: -7px;
+  margin-right: 10px;
+  background: url(../img/logo/logo.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+#login .box .logo .titulo {
+  margin-bottom: 20px;
+}
+#login .box .field {
+  margin-bottom: 10px;
+}
+#login .box .field input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+}
+#login .box .field button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border: 3px solid white;
+  border-radius: 3px;
+  background: white;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #009688;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#login .box .field button:hover {
+  background: transparent;
+  color: white;
+}
+#login .box .field button:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+#header {
+  height: 50px;
+  margin-bottom: 20px;
+  background: #009688;
+}
+#header .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+#header .logo .icone {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: url(../img/logo/logo.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+}
+#header .usuario {
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+#header .usuario .logoff {
+  color: #F00;
+}
+#menu {
+  background: #333;
+  border-radius: 3px;
+  overflow: hidden;
+}
+#menu ul li a {
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+}
+#menu ul li a.logoff {
+  background: #e53935;
+  color: white;
+}
+#modulo .box .dashboard {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 3px;
+}
+#modulo .box .dashboard ul li a {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  background: #2196f3;
+  color: white;
+}
+#modulo .box .dashboard ul li a:hover {
+  background: #0c7cd5;
+}
+#modulo .box .dashboard ul li a .icon {
+  float: left;
+  height: 40px;
+  padding-right: 10px;
+  display: inline-block;
+}
+#modulo .box .dashboard ul li a .icon .material-icons {
+  font-size: 40px !important;
+}
+#modulo .box .dashboard ul li a .info {
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+}
+#modulo .box .nome {
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+}
+#modulo .box .descricao {
+  font-size: 20px;
+  font-weight: 300;
+  color: #888;
+}
+#modulo .box .acoes {
+  margin-bottom: 20px;
+}
+#modulo .box .acoes ul li {
+  display: inline-block;
+}
+#modulo .box .acoes ul li:not(:last-of-type) {
+  margin-right: 10px;
+}
+#modulo .box .acoes ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  background: #009688;
+  border-radius: 3px;
+  display: inline-block;
+}
+#modulo .box .acoes ul li a:hover {
+  background: #007d71;
+}
+#modulo .box ul.lista {
+  background: white;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+#modulo .box ul.lista > li:not(:last-of-type) {
+  border-bottom: 1px solid #EEE;
+}
+#modulo .box ul.lista > li a {
+  padding: 20px;
+  display: block;
+}
+#modulo .box ul.lista > li .img-case {
+  float: left;
+  width: 50px;
+  margin-right: 20px;
+}
+#modulo .box ul.lista > li .img-case .img {
+  padding-bottom: 100%;
+  background: #EEE no-repeat center;
+  background-size: cover;
+  border-radius: 50px;
+}
+#modulo .box ul.lista > li .info .titulo {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#modulo .box ul.lista > li .info .texto {
+  font-size: 14px;
+  font-weight: 300;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#modulo .box ul.lista > li .info .itens .info-item {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+  background: #2196f3;
+  border-radius: 3px;
+  display: inline-block;
+}
+#modulo .box ul.lista > li .info .itens .info-item .material-icons {
+  font-size: 14px !important;
+}
+#modulo .box .formulario {
+  float: left;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+}
+#modulo .box .formulario .foto {
+  text-align: center;
+  margin: 20px 0;
+}
+#modulo .box .formulario .foto .img-box {
+  width: 150px;
+  display: inline-block;
+}
+#modulo .box .formulario .foto .img-box .img {
+  padding-bottom: 100%;
+  background: #EEE no-repeat center;
+  background-size: cover;
+  border-radius: 100%;
+}
+#modulo .box .formulario .campo {
+  position: relative;
+  margin: 15px 0 0;
+  display: block;
+}
+#modulo .box .formulario .campo.select:before {
+  content: '\E5C5';
+  position: absolute;
+  bottom: 7.5px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  font-family: 'Material Icons';
+  font-size: 25px;
+  color: #888;
+  pointer-events: none;
+}
+#modulo .box .formulario .campo label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #888;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: translateY(25px) scale(1.3);
+  -moz-transform: translateY(25px) scale(1.3);
+  -o-transform: translateY(25px) scale(1.3);
+  -ms-transform: translateY(25px) scale(1.3);
+  transform: translateY(25px) scale(1.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  pointer-events: none;
+}
+#modulo .box .formulario .campo input,
+#modulo .box .formulario .campo select,
+#modulo .box .formulario .campo textarea {
+  width: 100%;
+  height: 40px;
+  padding: 5px 0;
+  margin-top: 15px;
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #DDD;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+#modulo .box .formulario .campo input:focus,
+#modulo .box .formulario .campo select:focus,
+#modulo .box .formulario .campo textarea:focus {
+  border-color: #2196f3;
+}
+#modulo .box .formulario .campo input:focus ~ label,
+#modulo .box .formulario .campo select:focus ~ label,
+#modulo .box .formulario .campo textarea:focus ~ label {
+  color: #2196f3;
+  -webkit-transform: translateY(0) scale(1) !important;
+  -moz-transform: translateY(0) scale(1) !important;
+  -o-transform: translateY(0) scale(1) !important;
+  -ms-transform: translateY(0) scale(1) !important;
+  transform: translateY(0) scale(1) !important;
+}
+#modulo .box .formulario .campo input:valid ~ label,
+#modulo .box .formulario .campo select:valid ~ label,
+#modulo .box .formulario .campo textarea:valid ~ label {
+  -webkit-transform: translateY(0) scale(1) !important;
+  -moz-transform: translateY(0) scale(1) !important;
+  -o-transform: translateY(0) scale(1) !important;
+  -ms-transform: translateY(0) scale(1) !important;
+  transform: translateY(0) scale(1) !important;
+}
+#modulo .box .formulario .campo.textarea textarea {
+  height: 35px;
+  padding: 0;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  resize: none;
+  overflow: hidden;
+}
+#modulo .box .formulario .campo.textarea textarea ~ label {
+  -webkit-transform: translateY(20px) scale(1.3);
+  -moz-transform: translateY(20px) scale(1.3);
+  -o-transform: translateY(20px) scale(1.3);
+  -ms-transform: translateY(20px) scale(1.3);
+  transform: translateY(20px) scale(1.3);
+}
+#modulo .box .formulario .campo.upload label {
+  -webkit-transform: translateY(0) scale(1) !important;
+  -moz-transform: translateY(0) scale(1) !important;
+  -o-transform: translateY(0) scale(1) !important;
+  -ms-transform: translateY(0) scale(1) !important;
+  transform: translateY(0) scale(1) !important;
+}
+#modulo .box .formulario .campo.submit {
+  margin-bottom: 15px;
+}
+#modulo .box .formulario .campo button,
+#modulo .box .formulario .campo .button {
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  background: #2196f3;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+}
+#modulo .box .formulario .campo button:hover,
+#modulo .box .formulario .campo .button:hover {
+  background: #0d8aee;
+}
+#modulo .box .formulario .campo button.delete,
+#modulo .box .formulario .campo .button.delete {
+  float: right;
+  background: #e53935;
+}
+#modulo .box .formulario .campo button.delete:hover,
+#modulo .box .formulario .campo .button.delete:hover {
+  background: #e2231e;
+}
