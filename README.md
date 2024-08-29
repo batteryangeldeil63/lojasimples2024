@@ -1,1 +1,1 @@
-# lojasimples
+# simplesloja
