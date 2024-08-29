@@ -1,1 +1,1 @@
-# simplesloja
+# lojasimples2024
